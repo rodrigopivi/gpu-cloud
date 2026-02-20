@@ -9,7 +9,7 @@
  * import { ApiTestClient } from './client';
  * 
  * const client = new ApiTestClient('http://localhost:3000');
- * await client.login('admin@gpucloud.local', 'admin123');
+ * await client.login('admin@gpucloud.local', 'admin$123$');
  * const key = await client.createApiKey('Test Key');
  * const response = await client.chatCompletion(key, 'Hello!');
  * ```

@@ -60,7 +60,7 @@ export async function runAllTests(baseUrl: string = 'http://localhost:3000'): Pr
   }, results);
 
   await runTest('Login', async () => {
-    const user = await client.login('admin@gpucloud.local', 'admin123');
+    const user = await client.login('admin@gpucloud.local', 'admin$123$');
     return user.email === 'admin@gpucloud.local';
   }, results);
 

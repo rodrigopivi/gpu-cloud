@@ -177,7 +177,7 @@ export const createTokenPayload = (overrides: Record<string, any> = {}) => ({
 // Request bodies
 export const createLoginRequest = (overrides: Record<string, any> = {}) => ({
   email: 'admin@gpucloud.local',
-  password: 'admin123',
+  password: 'admin$123$',
   ...overrides,
 });
 

@@ -22,7 +22,7 @@ async function main() {
 
   // 2. Login
   console.log('2. Logging in...');
-  const user = await client.login('admin@gpucloud.local', 'admin123');
+  const user = await client.login('admin@gpucloud.local', 'admin$123$');
   console.log(`   Welcome, ${user.email}!`);
   console.log(`   Admin: ${user.isAdmin}\n`);
 

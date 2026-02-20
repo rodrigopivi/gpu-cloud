@@ -11,7 +11,7 @@ const JWT_EXPIRES_IN = '24h';
 const BCRYPT_SALT_ROUNDS = 10;
 const DEFAULT_RATE_LIMIT_PER_MINUTE = 60;
 const ADMIN_EMAIL = 'admin@gpucloud.local';
-const ADMIN_PASSWORD = 'admin123';
+const ADMIN_PASSWORD = 'admin$123$';
 
 export class AuthService {
   // Initialize default admin user

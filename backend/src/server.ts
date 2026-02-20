@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
-import { PORT, NODE_ENV, CORS_ORIGINS } from './config';
+import { PORT, NODE_ENV } from './config';
 import routes from './routes';
 import authService from './services/auth';
 import workerManager from './services/workerManager';
@@ -11,10 +11,7 @@ const app = express();
 
 // Middleware
 app.use(helmet());
-app.use(cors({
-  origin: CORS_ORIGINS,
-  credentials: true,
-}));
+app.use(cors());
 app.use(morgan('combined'));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
